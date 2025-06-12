@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
-  <script src="p5.js"></script>
+<html><head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/addons/p5.sound.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5/lib/addons/p5.dom.min.js"></script>
   <script src="sketch.js"></script>
   <style>
     body { margin: 0; padding: 0; }
     canvas { display: block; }
+    .produto-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #EBA28B;
+      border-radius: 5px;
+    }
+    .produto-imagem {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+    .produto-info {
+      flex-grow: 1;
+    }
+    .produto-preco {
+      font-weight: bold;
+      color: green;
+      margin-bottom: 5px;
+    }
+    .quantidade-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .quantidade-label {
+      margin-right: 5px;
+    }
+    .comprar-button {
+      background-color: #DA0F54;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="feira.jpeg" alt="" style="text-align: start;">
-  </header>
-</body>
-</html>
+  <div id="p5-container"></div>
+
+</body></html>
